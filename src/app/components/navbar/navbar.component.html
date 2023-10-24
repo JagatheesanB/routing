@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <div class="" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart" routerLinkActive="active"
+            >Cart {{ getCount() }}</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/order" routerLinkActive="active"
+            >Orders</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="log()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
